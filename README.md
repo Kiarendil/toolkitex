@@ -16,4 +16,5 @@ LaTeX package to make typing scientific texts **in Russian** easier.
 **Usage:**&emsp;`Ускорение свободно падающего тела $ g = 9.8~\m/\s^2 $.`
 
 ### Changelog
-`[1.0] 2017/01/01`&emsp; All the bones assembled into the single package.
+`[1.0] 2017/01/01`&emsp; All the bones assembled into the single package.  
+`[1.1] 2017/01/30`&emsp; Added units:&ensp; _hour_, _litre_, _millilitre_.
