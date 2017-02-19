@@ -4,6 +4,8 @@
 
 # But not these files...
 !.gitignore
+!Makefile
+!*.sh
 !*.tex
 !*.cls
 !*.sty
