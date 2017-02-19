@@ -1,15 +1,15 @@
 # ToolkiTeX: Kind of LaTe'mplate
 
-**Installation:**&emsp;&emsp; `git clone https://github.com/uteshevia/toolkitex && cd toolkitex && make install`  
-**Uninstallation:**&ensp;&thinsp; `make uninstall` in repo directory  
-**Usage:**&emsp;&emsp;&emsp;&emsp;&thinsp; `writex [project name]` to create bare tex project and initialize git repository
+| Action                  | Command line                                                                       |
+| ----------------------- | ---------------------------------------------------------------------------------- |
+| Install                 | `git clone https://github.com/uteshevia/toolkitex && cd toolkitex && make install` |
+| Uninstall               | `make uninstall` in repo directory                                                 |
+| Create project          | `writex [project name]`                                                            |
 
 #### Changelog
 `[ - ] 2017/01/01`&emsp; All the bones assembled into the single package IUnits.  
-`[ - ] 2017/01/30`&emsp; Added units:&ensp; _hour_, _litre_, _millilitre_.  
-`[0.8] 2017/02/19`&emsp; Previous attempts have led to the creation of the class Urticle.  
-`[0.9] 2017/02/19`&emsp; Added code section *Definitions* to Urticle.  
-`[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script.
+`[ - ] 2017/02/19`&emsp; Previous attempts have led to the creation of the class Urticle.  
+`[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script. First release.
 
 ---
 
