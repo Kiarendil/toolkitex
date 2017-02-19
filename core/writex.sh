@@ -5,8 +5,14 @@ if [ "$1" == "-h" ] || [ "$1" == "--help" ] || [ $# -eq 0 ] ; then
   exit 0
 fi
 
-mkdir -p "$1" && cd "$1"
-mkdir -p "img/"
+if [ -d "$1" ]; then
+  echo "Project $1 already exists"
+  ( env UBUNTU_MENUPROXY= texmaker "$1/$1.tex" ) &
+  exit 1
+fi
+
+mkdir "$1" && cd "$1"
+mkdir "img/"
 
 echo "\\documentclass{urticle}
 \\inputpaths{}
@@ -16,7 +22,7 @@ echo "\\documentclass{urticle}
 
 \\end{document}" \
   > "$1.tex"
-texmaker "$1.tex" &
+( env UBUNTU_MENUPROXY= texmaker "$1.tex" ) &
 
 echo "# Ignore everything
 *
