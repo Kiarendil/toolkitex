@@ -9,7 +9,7 @@ install: urticle.cls iunits.sty inputx.sty writex.sh
 	@sudo chmod 755 /usr/local/bin/writex -v
 	@sudo texhash
 
-remove:
+uninstall:
 	@sudo rm /usr/local/share/texmf/tex/latex/toolkittex -rfv
 	@sudo rm /usr/local/bin/writex -v
 	@sudo texhash
