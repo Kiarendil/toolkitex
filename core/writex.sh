@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ] || [ $# -eq 0 ] ; then
-  echo "Usage: $0 [filename]"
+  echo "Usage: $0 [project name]"
   exit 0
 fi
 

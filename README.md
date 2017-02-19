@@ -2,7 +2,7 @@
 
 **Installation:**&emsp;&emsp; `git clone https://github.com/uteshevia/toolkitex && cd toolkitex && make install`  
 **Uninstallation:**&ensp;&thinsp; `make uninstall` in repo directory  
-**Usage:**&emsp;&emsp;&emsp;&emsp;&thinsp; `writex [file name]` to create bare tex project and initialize git repository
+**Usage:**&emsp;&emsp;&emsp;&emsp;&thinsp; `writex [project name]` to create bare tex project and initialize git repository
 
 ---
 
