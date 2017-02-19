@@ -1,5 +1,3 @@
-% Released on 2017/02/19
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{urticle}
 \ProcessOptions

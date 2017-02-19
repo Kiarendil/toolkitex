@@ -4,24 +4,27 @@
 **Uninstallation:**&ensp;&thinsp; `make uninstall` in repo directory  
 **Usage:**&emsp;&emsp;&emsp;&emsp;&thinsp; `writex [project name]` to create bare tex project and initialize git repository
 
+#### Changelog
+`[ - ] 2017/01/01`&emsp; All the bones assembled into the single package IUnits.  
+`[ - ] 2017/01/30`&emsp; Added units:&ensp; _hour_, _litre_, _millilitre_.  
+`[0.8] 2017/02/19`&emsp; Previous attempts have led to the creation of the class Urticle.  
+`[0.9] 2017/02/19`&emsp; Added code section *Definitions* to Urticle.  
+`[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script.
+
 ---
 
 ## Urticle
 Class file for general purposes based on standard `article`.  
 It requires the following LaTeX packages:
-* `fontenc`, `inputenc`, `babel`, `geometry`
-* `amsmath`, `amsfonts`, `amssymb`, `onlyamsmath`
-* `cancel`, `icomma`, `mathrsfs`, `bigints`
-* `graphicx`, `color`, `float`, `wrapfig`
-* `tikz`, `pgfplots`
-* `gnuplottex`, `epstopdf` (off by default)
-* `fancyhdr`, `fancyref`, `secdot`
-* `enumitem`, `booktabs`, `array`
-* `inputx`, `iunits`
-
-#### Changelog
-`2017/02/19a`&emsp; All previous attempts have led to the creation of the class.  
-`2017/02/19b`&emsp; Added code section *Definitions.*
+* `fontenc`, `inputenc`, `babel`, `geometry`;
+* `amsmath`, `amsfonts`, `amssymb`, `onlyamsmath`;
+* `cancel`, `icomma`, `mathrsfs`, `bigints`;
+* `graphicx`, `color`, `float`, `wrapfig`;
+* `tikz`, `pgfplots`;
+* `gnuplottex`, `epstopdf` (off by default);
+* `fancyhdr`, `fancyref`, `secdot`;
+* `enumitem`, `booktabs`, `array`;
+* `inputx`, `iunits`.
 
 
 ## IUnits
@@ -31,10 +34,6 @@ LaTeX package to make typing scientific texts **in Russian** easier.
 > See the package content for help since it is rather self-descriptive.
 
 **Usage:**&emsp;`Ускорение свободно падающего тела $ g = 9.8~\m/\s^2 $.`
-
-#### Changelog
-`[1.0] 2017/01/01`&emsp; All the bones assembled into the single package.  
-`[1.1] 2017/01/30`&emsp; Added units:&ensp; _hour_, _litre_, _millilitre_.
 
 
 ## InputX
