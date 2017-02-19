@@ -16,7 +16,7 @@ echo "\\documentclass{urticle}
 
 \\end{document}" \
   > "$1.tex"
-texmaker "$1.tex" &
+texmaker "`pwd`/$1.tex" &
 
 echo "# Ignore everything
 *
