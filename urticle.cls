@@ -60,10 +60,6 @@
 %\RequirePackage{gnuplottex}
 %\RequirePackage{epstopdf}
 
-\newcommand{\tw}{\textwidth}
-\newcommand{\lw}{\linewidth}
-\newcommand{\bs}{\baselineskip}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                        Нумерация страниц и заголовки                        %
@@ -99,3 +95,15 @@
 \RequirePackage{booktabs}
 \RequirePackage{array}
 \renewcommand{\arraystretch}{ 1.20 }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                 Определения                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\tw}{\textwidth}
+\newcommand{\lw}{\linewidth}
+\newcommand{\bs}{\baselineskip}
+\newcommand{\const}{\ensuremath{\mathrm{const}}}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
