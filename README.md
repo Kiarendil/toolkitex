@@ -9,7 +9,8 @@
 #### Changelog
 `[ - ] 2017/01/01`&emsp; All the bones assembled into the single package IUnits.  
 `[ - ] 2017/02/19`&emsp; Previous attempts have led to the creation of the class Urticle.  
-`[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script. First release.
+`[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script. First release.  
+`[1.1] 2017/02/20`&emsp; Major install procedure improvement.
 
 ---
 
