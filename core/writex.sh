@@ -22,7 +22,14 @@ echo "\\documentclass{urticle}
 
 \\end{document}" \
   > "$1.tex"
-( env UBUNTU_MENUPROXY= texmaker "$1.tex" ) &
+
+if [ "$(uname)" == "Linux" ]; then
+  xdg-open "$1.tex"
+elif [ "$(uname)" == "Darwin" ]; then
+  open "$1.tex"
+else
+  echo "Unknown OS"
+fi
 
 echo "# Ignore everything
 *
@@ -37,6 +44,7 @@ echo "# Ignore everything
 # ...even if they are in subdirectories
 !*/" \
   > .gitignore
+
 git init
 git add -A
 git commit -m "Initial commit (toolkitex)"
