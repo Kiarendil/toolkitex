@@ -1,15 +1,16 @@
-.DEFAULT_GOAL := nop
 nop:
 	@echo "Run make install, please."
 
+TEXMF_PATH = $(shell kpsewhich -var-value=TEXMFLOCAL)/tex/latex/toolkittex
+EXEC_PATH  = $(subst pdflatex,writex,$(shell which pdflatex))
+
 install: core/urticle.cls core/iunits.sty core/inputx.sty core/writex.sh
-	@sudo mkdir -p /usr/local/share/texmf/tex/latex/toolkittex -v
-	@sudo cp core/*.sty core/*.cls /usr/local/share/texmf/tex/latex/toolkittex -v
-	@sudo cp core/writex.sh /usr/local/bin/writex -v
-	@sudo chmod 755 /usr/local/bin/writex -v
+	@sudo mkdir -pv $(TEXMF_PATH)
+	@sudo cp -v core/*.sty core/*.cls $(TEXMF_PATH)
+	@sudo cp -v core/writex.sh $(EXEC_PATH)
+	@sudo chmod -v 755 $(EXEC_PATH)
 	@sudo texhash
 
 uninstall:
-	@sudo rm /usr/local/share/texmf/tex/latex/toolkittex -rfv
-	@sudo rm /usr/local/bin/writex -v
+	@sudo rm -rfv $(TEXMF_PATH) $(EXEC_PATH)
 	@sudo texhash
