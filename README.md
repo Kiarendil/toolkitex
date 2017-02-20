@@ -20,8 +20,7 @@ It requires the following LaTeX packages:
 * `amsmath`, `amsfonts`, `amssymb`, `onlyamsmath`;
 * `cancel`, `icomma`, `mathrsfs`, `bigints`;
 * `graphicx`, `color`, `float`, `wrapfig`;
-* `tikz`, `pgfplots`;
-* `gnuplottex`, `epstopdf` (off by default);
+* `tikz`, `pgfplots`, `gnuplottex`, `epstopdf` (off by default);
 * `fancyhdr`, `fancyref`, `secdot`;
 * `enumitem`, `booktabs`, `array`;
 * `inputx`, `iunits`.

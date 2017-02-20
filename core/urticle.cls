@@ -47,14 +47,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{graphicx}
-%  \graphicspath{{img/}}
+  \graphicspath{{img/}}
 \RequirePackage{float}
 \RequirePackage{wrapfig}
 \RequirePackage{color}
 
-\RequirePackage{tikz}
-\RequirePackage{pgfplots}
-\pgfplotsset{compat=1.13}
+%\RequirePackage{tikz}
+%\RequirePackage{pgfplots}
+%\pgfplotsset{compat=1.13}
 %\RequirePackage{gnuplottex}
 %\RequirePackage{epstopdf}
 
