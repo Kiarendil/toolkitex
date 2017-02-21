@@ -102,6 +102,8 @@
 \newcommand{\tw}{\textwidth}
 \newcommand{\lw}{\linewidth}
 \newcommand{\bs}{\baselineskip}
+
 \newcommand{\const}{\ensuremath{\mathrm{const}}}
+\newcommand{\ddc}[3]{\left( \frac{\partial #1}{\partial #2} \right)_{\! #3}}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
