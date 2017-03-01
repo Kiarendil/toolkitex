@@ -1,4 +1,4 @@
-# ToolkiTeX: Kind of LaTe'mplate
+# ToolkiTeX: Kind of Te'mplate
 
 | Action                  | Command line                                                                       |
 | ----------------------- | ---------------------------------------------------------------------------------- |
@@ -11,7 +11,7 @@
 `[ - ] 2017/02/19`&emsp; Previous attempts have led to the creation of the class Urticle.  
 `[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script. First release.  
 `[1.1] 2017/02/20`&emsp; Major install procedure improvement.  
-`[1.2] 2017/02/22`&emsp; Added logical connectives.
+`[1.2] 2017/02/22`&emsp; Added logical connectives.  
 `[1.3] 2017/03/01`&emsp; Regular: added new units and invoked packages.
 
 ---
@@ -30,18 +30,14 @@ It requires the following LaTeX packages:
 
 
 ## IUnits
-LaTeX package to make typing scientific texts **in Russian** easier.
-
-> Provides a plenty of physical units and prefixes' macros.  
-> See the package content for help since it is rather self-descriptive.
+LaTeX package to make typing scientific texts **in Russian** easier.  
+Provides a plenty of physical units and prefixes' macros.  
 
 **Usage:**&emsp;`Ускорение свободно падающего тела $ g = 9.8~\m/\s^2 $.`
 
 
 ## InputX
-LaTeX package [by Blackstev](http://tex.stackexchange.com/a/44215) (2011/06/28) for better file includings.
-
-> Command `\inputpaths` specifies the directories where `\include` and `\input` can look for the given file.  
-> The latter use the root directory whilst input paths are not set.
+LaTeX package [by Blackstev](http://tex.stackexchange.com/a/44215) (2011/06/28) for better file includings.  
+Command `\inputpaths` specifies the directories where `\include` and `\input` can look for the given file.  
 
 **Usage:**&emsp;`\inputpaths {dir1, ..., dirN}`
