@@ -12,6 +12,7 @@
 `[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script. First release.  
 `[1.1] 2017/02/20`&emsp; Major install procedure improvement.  
 `[1.2] 2017/02/22`&emsp; Added logical connectives.
+`[1.3] 2017/03/01`&emsp; Regular: added new units and invoked packages.
 
 ---
 
@@ -23,7 +24,7 @@ It requires the following LaTeX packages:
 * `cancel`, `icomma`, `mathrsfs`, `bigints`;
 * `graphicx`, `color`, `float`, `wrapfig`;
 * `tikz`, `pgfplots`, `gnuplottex`, `epstopdf` (off by default);
-* `fancyhdr`, `fancyref`, `secdot`;
+* `fancyhdr`, `fancyref`, `secdot`, `caption`;
 * `enumitem`, `booktabs`, `array`;
 * `inputx`, `iunits`.
 
