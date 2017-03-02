@@ -12,6 +12,7 @@
 \RequirePackage[T2A,OT1]           {fontenc}
 \RequirePackage[utf8]              {inputenc}
 \RequirePackage[english, russian]  {babel}
+\RequirePackage                    {inputx}
 
 \RequirePackage[ left     = 2.5cm,
                  right    = 1.5cm,
@@ -22,8 +23,6 @@
 \setlength    {\parskip}        { .5em plus .15em minus .08em }
 \setlength    {\parindent}      { .0em }
 \renewcommand {\baselinestretch}{ 1.07 }
-\usepackage{inputx}
-%  \inputpaths{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,6 +34,7 @@
 \RequirePackage{amssymb}
 \RequirePackage[all,warning]
                {onlyamsmath}
+    \AtBeginDocument{\catcode`\$=3}
 \RequirePackage{cancel}
 \RequirePackage{icomma}
 \RequirePackage{mathrsfs}
@@ -47,16 +47,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{graphicx}
-  \graphicspath{{img/}}
+    \graphicspath{{img/}}
 \RequirePackage{float}
 \RequirePackage{wrapfig}
 \RequirePackage{color}
-
-%\RequirePackage{tikz}
-%\RequirePackage{pgfplots}
-%\pgfplotsset{compat=1.13}
-%\RequirePackage{gnuplottex}
-%\RequirePackage{epstopdf}
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -65,12 +61,11 @@
 
 \RequirePackage{fancyref}
 \RequirePackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{ .0em }
-\renewcommand{\footrulewidth}{ .0em }
-\fancyfoot[C]{\texttt{-~\thepage~-}}
-
+    \pagestyle{fancy}
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{ .0em }
+    \renewcommand{\footrulewidth}{ .0em }
+    \fancyfoot[C]{\texttt{-~\thepage~-}}
 \RequirePackage{secdot}
 \RequirePackage{caption}
 
@@ -80,20 +75,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{enumitem}
-\setlist[enumerate]{leftmargin =  .0\parindent,
-                    topsep     =  .0\parskip,
-                    itemsep    = -.0\parskip,
-                    resume
-                   }
-\setlist[itemize]  {leftmargin =  .0\parindent,
-                    topsep     =  .0\parskip,
-                    itemsep    = -.0\parskip,
-                    resume
-                   }
-
+    \setlist{leftmargin =   1cm,
+             topsep     =  .0\parskip,
+             itemsep    = -.0\parskip,
+             resume
+            }
 \RequirePackage{booktabs}
 \RequirePackage{array}
-\renewcommand{\arraystretch}{ 1.20 }
+    \renewcommand{\arraystretch}{ 1.20 }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,13 +92,13 @@
 \newcommand{\tw}{\textwidth}
 \newcommand{\lw}{\linewidth}
 \newcommand{\bs}{\baselineskip}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
-\newcommand{\const}{\ensuremath{\mathrm{const}}}
-
+\newcommand{\dd} [2]{\frac{d #1}{d #2}}
 \newcommand{\pdd}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\ddc}[3]{\left( \frac{\partial #1}{\partial #2} \right)_{\! #3}}
 
-\renewcommand{\iff}{\quad \Longleftrightarrow \quad}
-\newcommand{\then}{\quad \Longrightarrow \quad}
+\renewcommand{\iff} {\quad \Longleftrightarrow \quad}
+\newcommand  {\then}{\quad \Longrightarrow \quad}
 
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\const}{\ensuremath{\mathrm{const}}}
