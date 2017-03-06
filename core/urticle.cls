@@ -102,6 +102,7 @@
 \renewcommand{\iff}     {\quad \Longleftrightarrow \quad}
 \newcommand  {\then}    {\quad \Longrightarrow \quad}
 \newcommand  {\subst}[1]{\begin{Vmatrix} #1 \end{Vmatrix}}
+\newcommand  {\qed}     {\hfill\ensuremath{\square}}
 
 \newcommand  {\const}{\ensuremath{\mathrm{const}}}
 \renewcommand{\Re}   {\operatorname{Re}}
