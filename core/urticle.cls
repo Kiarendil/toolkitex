@@ -97,8 +97,13 @@
 \newcommand{\dd} [2]{\frac{d #1}{d #2}}
 \newcommand{\pdd}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\ddc}[3]{\left( \frac{\partial #1}{\partial #2} \right)_{\! #3}}
+\newcommand{\abs}[1]{\left| #1 \right|}
 
-\renewcommand{\iff} {\quad \Longleftrightarrow \quad}
-\newcommand  {\then}{\quad \Longrightarrow \quad}
+\renewcommand{\iff}     {\quad \Longleftrightarrow \quad}
+\newcommand  {\then}    {\quad \Longrightarrow \quad}
+\newcommand  {\subst}[1]{\begin{Vmatrix} #1 \end{Vmatrix}}
 
-\newcommand{\const}{\ensuremath{\mathrm{const}}}
+\newcommand  {\const}{\ensuremath{\mathrm{const}}}
+\renewcommand{\Re}   {\operatorname{Re}}
+\renewcommand{\Im}   {\operatorname{Im}}
+\DeclareMathOperator {\Ker}{Ker}
