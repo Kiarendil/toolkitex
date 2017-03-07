@@ -14,6 +14,7 @@
 `[1.2] 2017/02/22`&emsp; Added logical connectives.  
 `[1.3] 2017/03/01`&emsp; Regular: added new units and invoked packages.  
 `[1.4] 2017/03/02`&emsp; Switched pgfplots on by default.
+`[1.5] 2017/03/07`&emsp; Regular: usability improvements
 
 ---
 
