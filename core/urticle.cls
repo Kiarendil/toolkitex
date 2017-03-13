@@ -108,3 +108,4 @@
 \renewcommand{\Re}   {\operatorname{Re}}
 \renewcommand{\Im}   {\operatorname{Im}}
 \DeclareMathOperator {\Ker}{Ker}
+\DeclareMathOperator {\Rg} {Rg}
