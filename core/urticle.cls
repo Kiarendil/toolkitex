@@ -98,6 +98,7 @@
 \newcommand{\pdd}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\ddc}[3]{\left( \frac{\partial #1}{\partial #2} \right)_{\! #3}}
 \newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\divc}  {\mathop{\raisebox{-2pt}{\vdots}}}
 
 \renewcommand{\iff}     {\quad \Longleftrightarrow \quad}
 \newcommand  {\then}    {\quad \Longrightarrow \quad}
