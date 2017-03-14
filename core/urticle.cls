@@ -110,3 +110,17 @@
 \renewcommand{\Im}   {\operatorname{Im}}
 \DeclareMathOperator {\Ker}{Ker}
 \DeclareMathOperator {\Rg} {Rg}
+
+\makeatletter
+\newenvironment{sqcases}{%
+  \matrix@check\sqcases\env@sqcases
+}{%
+  \endarray\right.%
+}
+\def\env@sqcases{%
+  \let\@ifnextchar\new@ifnextchar
+  \left\lbrack
+  \def\arraystretch{1.2}%
+  \array{@{}l@{\quad}l@{}}%
+}
+\makeatother
