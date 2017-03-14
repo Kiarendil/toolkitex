@@ -7,20 +7,20 @@
 | Create project          | `writex [project name]`                                                            |
 
 #### Changelog
-`[ - ] 2017/01/01`&emsp; All the bones assembled into the single package IUnits.  
-`[ - ] 2017/02/19`&emsp; Previous attempts have led to the creation of the class Urticle.  
-`[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script. First release.  
-`[1.1] 2017/02/20`&emsp; Major install procedure improvement.  
-`[1.2] 2017/02/22`&emsp; Added logical connectives.  
-`[1.3] 2017/03/01`&emsp; Regular: added new units and invoked packages.  
-`[1.4] 2017/03/02`&emsp; Switched pgfplots on by default.
+`[ - ] 2017/01/01`&emsp; All the bones assembled into the single package IUnits  
+`[ - ] 2017/02/19`&emsp; Previous attempts have led to the creation of the class Urticle  
+`[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script. First release  
+`[1.1] 2017/02/20`&emsp; Major install procedure improvement  
+`[1.2] 2017/02/22`&emsp; Added logical connectives  
+`[1.3] 2017/03/01`&emsp; Regular: added new units and invoked packages  
+`[1.4] 2017/03/02`&emsp; Switched pgfplots on by default  
 `[1.5] 2017/03/07`&emsp; Regular: usability improvements
 
 ---
 
 ## Urticle
 Class file for general purposes based on standard `article`.  
-It requires the following LaTeX packages:
+It introduces a pack of frequently used definitions and requires the following LaTeX packages:
 * `fontenc`, `inputenc`, `babel`, `geometry`;
 * `amsmath`, `amsfonts`, `amssymb`, `onlyamsmath`;
 * `cancel`, `icomma`, `mathrsfs`, `bigints`;
@@ -29,6 +29,7 @@ It requires the following LaTeX packages:
 * `enumitem`, `booktabs`, `array`;
 * `inputx`, `iunits`.
 
+<br/>
 
 ## IUnits
 LaTeX package to make typing scientific texts **in Russian** easier.  
@@ -36,6 +37,7 @@ Provides a plenty of physical units and prefixes' macros.
 
 **Usage:**&emsp;`Ускорение свободно падающего тела $ g = 9.8~\m/\s^2 $.`
 
+<br/>
 
 ## InputX
 LaTeX package [by Blackstev](http://tex.stackexchange.com/a/44215) (2011/06/28) for better file includings.  
