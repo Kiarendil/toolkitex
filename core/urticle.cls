@@ -110,6 +110,7 @@
 \renewcommand{\Im}   {\operatorname{Im}}
 \DeclareMathOperator {\Ker}{Ker}
 \DeclareMathOperator {\Rg} {Rg}
+\DeclareMathOperator {\Int}{int}
 
 \makeatletter
 \newenvironment{sqcases}{%
