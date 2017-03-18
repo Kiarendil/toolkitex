@@ -112,6 +112,12 @@
 \DeclareMathOperator {\Rg} {Rg}
 \DeclareMathOperator {\Int}{int}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                Патчи окружений                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Cases with bracket
 \makeatletter
 \newenvironment{sqcases}{%
   \matrix@check\sqcases\env@sqcases
@@ -124,4 +130,13 @@
   \def\arraystretch{1.2}%
   \array{@{}l@{\quad}l@{}}%
 }
+\makeatother
+
+
+% Auxiliary alignment and separators inside matrix environment
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
 \makeatother

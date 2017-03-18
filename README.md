@@ -12,9 +12,10 @@
 `[1.0] 2017/02/19`&emsp; Implemented installer and *writex* script. First release  
 `[1.1] 2017/02/20`&emsp; Major install procedure improvement  
 `[1.2] 2017/02/22`&emsp; Added logical connectives  
-`[1.3] 2017/03/01`&emsp; Regular: added new units and invoked packages  
+`[1.3] 2017/03/01`&emsp; Added new units and invoked packages  
 `[1.4] 2017/03/02`&emsp; Switched pgfplots on by default  
-`[1.5] 2017/03/07`&emsp; Regular: usability improvements
+`[1.5] 2017/03/07`&emsp; Regular usability improvements  
+`[1.6] 2017/03/18`&emsp; New math definitions and patches
 
 ---
 
