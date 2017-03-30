@@ -16,7 +16,6 @@ mkdir "img/"
 
 echo "\\documentclass{urticle}
 \\inputpaths{}
-\\pgfplotsset{compat=1.13}
 
 \\begin{document}
 

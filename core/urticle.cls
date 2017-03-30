@@ -53,6 +53,7 @@
 \RequirePackage{color}
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
+    \pgfplotsset{compat=newest}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
