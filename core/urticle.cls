@@ -12,7 +12,6 @@
 \RequirePackage[T2A,OT1]           {fontenc}
 \RequirePackage[utf8]              {inputenc}
 \RequirePackage[english, russian]  {babel}
-\RequirePackage                    {inputx}
 
 \RequirePackage[ left     = 2.5cm,
                  right    = 1.5cm,
@@ -39,7 +38,9 @@
 \RequirePackage{icomma}
 \RequirePackage{mathrsfs}
 \RequirePackage{bigints}
+
 \RequirePackage{iunits}
+\RequirePackage{auxtools}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,60 +85,3 @@
 \RequirePackage{booktabs}
 \RequirePackage{array}
     \renewcommand{\arraystretch}{ 1.20 }
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                 Определения                                 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\tw}{\textwidth}
-\newcommand{\lw}{\linewidth}
-\newcommand{\bs}{\baselineskip}
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-
-\newcommand{\dd} [2]{\frac{d #1}{d #2}}
-\newcommand{\pdd}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\ddc}[3]{\left( \frac{\partial #1}{\partial #2} \right)_{\! #3}}
-\newcommand{\abs}[1]{\left| #1 \right|}
-\newcommand{\divc}  {\mathop{\raisebox{-2pt}{\vdots}}}
-
-\renewcommand{\iff}     {\quad \Longleftrightarrow \quad}
-\newcommand  {\then}    {\quad \Longrightarrow \quad}
-\newcommand  {\subst}[1]{\begin{Vmatrix} #1 \end{Vmatrix}}
-\newcommand  {\qed}     {\hfill\ensuremath{\square}}
-
-\newcommand  {\const}{\ensuremath{\mathrm{const}}}
-\renewcommand{\Re}   {\operatorname{Re}}
-\renewcommand{\Im}   {\operatorname{Im}}
-\DeclareMathOperator {\Ker}{Ker}
-\DeclareMathOperator {\Rg} {Rg}
-\DeclareMathOperator {\Int}{int}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                Патчи окружений                              %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Cases with bracket
-\makeatletter
-\newenvironment{sqcases}{%
-  \matrix@check\sqcases\env@sqcases
-}{%
-  \endarray\right.%
-}
-\def\env@sqcases{%
-  \let\@ifnextchar\new@ifnextchar
-  \left\lbrack
-  \def\arraystretch{1.2}%
-  \array{@{}l@{\quad}l@{}}%
-}
-\makeatother
-
-
-% Auxiliary alignment and separators inside matrix environment
-\makeatletter
-\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
-  \hskip -\arraycolsep
-  \let\@ifnextchar\new@ifnextchar
-  \array{#1}}
-\makeatother
