@@ -1,50 +1,89 @@
 #!/bin/bash
 
-if [ "$1" == "-h" ] || [ "$1" == "--help" ] || [ $# -eq 0 ] ; then
-  echo "Usage: $0 [project name]"
-  exit 0
+
+__help() {
+	echo "Usage: $0 <project name> [-g|--git]"
+	exit 1
+}
+
+__open() {
+	if [ "$(uname)" == "Linux" ] ; then
+		xdg-open "$PROJECT.tex"
+	elif [ "$(uname)" == "Darwin" ] ; then
+		open "$PROJECT.tex"
+	else
+		echo "Unsupported uname"
+	fi
+}
+
+
+# Parse arguments #############################################################
+
+if [[ $# -eq 0 ]] ; then
+	__help
 fi
 
-if [ -d "$1" ]; then
-  echo "Project $1 already exists"
-  ( env UBUNTU_MENUPROXY= texmaker "$1/$1.tex" ) &
-  exit 1
+while [[ $# -gt 0 ]] ; do
+case "$1" in
+	-h|--help) __help ;;
+	-g|--git)  INIT_GIT=TRUE ;;
+	*) 		   PROJECT="$1" ;;
+esac; shift; done
+
+if [[ ! -n $PROJECT ]] ; then
+	__help
 fi
 
-mkdir "$1" && cd "$1"
-mkdir "img/"
 
-echo "\\documentclass{urticle}
-\\inputpaths{}
+# Already exists ##############################################################
 
+if [ -d "$PROJECT" ] ; then
+	echo "Project $PROJECT already exists."
+	cd "$PROJECT"
+	__open
+	exit 1
+else
+
+
+# Create new project ##########################################################
+
+mkdir "$PROJECT"
+cd "$PROJECT"
+mkdir img
+
+cat > "$PROJECT.tex" <<__MAIN_TEX__
+\\documentclass{urticle}
 \\begin{document}
 
+\\end{document}
+__MAIN_TEX__
 
-\\end{document}" \
-  > "$1.tex"
 
-if [ "$(uname)" == "Linux" ]; then
-  xdg-open "$1.tex"
-elif [ "$(uname)" == "Darwin" ]; then
-  open "$1.tex"
-else
-  echo "Unknown OS"
-fi
+# Initialize git repository ###################################################
 
-echo "# Ignore everything
+if [[ -n $INIT_GIT ]] ; then
+	cat > .gitignore <<__GITIGNORE__
+# Ignore everything
 *
 !*/
 
 # But not these files...
 !.gitignore
 !*.tex
-!*.png
 !*.eps
+!*.png
 
 # ...even if they are in subdirectories
-!*/" \
-  > .gitignore
+!*/
 
-git init
-git add -A
-git commit -m "Initial commit (toolkitex)"
+# Though definitely these
+.DS_Store
+__GITIGNORE__
+	git init
+	git add -A
+	git commit -m "Initial commit (toolkitex)"
+fi
+
+
+# Open the project anyway #####################################################
+fi; __open
