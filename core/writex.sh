@@ -14,6 +14,7 @@ __open() {
 	else
 		echo "Unsupported uname"
 	fi
+	exit 0
 }
 
 
@@ -27,28 +28,34 @@ while [[ $# -gt 0 ]] ; do
 case "$1" in
 	-h|--help) __help ;;
 	-g|--git)  INIT_GIT=TRUE ;;
-	*) 		   PROJECT="$1" ;;
+	*)
+		if [[ ! -n $PROJECT ]] ; then
+			PROJECT="$1"
+		else
+			__help
+		fi ;;
 esac; shift; done
 
-if [[ ! -n $PROJECT ]] ; then
+
+# Enter project dir ###########################################################
+
+if [[ -n $PROJECT ]] ; then
+	mkdir -p "$PROJECT"
+	cd "$PROJECT"
+else
 	__help
 fi
 
 
 # Already exists ##############################################################
 
-if [ -d "$PROJECT" ] ; then
+if [ -f "$PROJECT.tex" ] ; then
 	echo "Project $PROJECT already exists."
-	cd "$PROJECT"
-	__open
-	exit 1
 else
 
 
 # Create new project ##########################################################
 
-mkdir "$PROJECT"
-cd "$PROJECT"
 mkdir img
 
 cat > "$PROJECT.tex" <<__MAIN_TEX__
@@ -76,12 +83,12 @@ if [[ -n $INIT_GIT ]] ; then
 # ...even if they are in subdirectories
 !*/
 
-# Though definitely these
+# Though definitely these:
 .DS_Store
 __GITIGNORE__
 	git init
 	git add -A
-	git commit -m "Initial commit (toolkitex)"
+	git commit -m "Initial commit [toolkitex]"
 fi
 
 
