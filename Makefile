@@ -32,3 +32,7 @@ uninstall: __set_vars __enter_sudo
 	@sudo rm -rf -v $(TEXMF_PATH) $(WRITEX_LOC)
 	@sudo texhash
 	@echo "Done."
+
+reinstall:
+	@$(MAKE) uninstall
+	@$(MAKE) install

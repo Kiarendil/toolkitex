@@ -40,7 +40,7 @@
 \RequirePackage{bigints}
 
 \RequirePackage{iunits}
-\RequirePackage{auxtools}
+\RequirePackage{udef}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
