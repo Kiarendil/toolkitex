@@ -2,32 +2,15 @@
 \ProvidesClass{urticle}
 \ProcessOptions
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                              Формат документа                               %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \LoadClass
     [12pt, a4paper, oneside, final]{article}
-\RequirePackage[T2A,OT1]           {fontenc}
-\RequirePackage[utf8]              {inputenc}
-\RequirePackage[english, russian]  {babel}
-
-\RequirePackage[ left     = 2.5cm,
-                 right    = 1.5cm,
-                 top      = 2.0cm,
-                 bottom   = 1.25cm,
-                 includefoot,
-                 footskip = 1.25cm ]{geometry}
-\setlength    {\parskip}        { .5em plus .15em minus .08em }
-\setlength    {\parindent}      { .0em }
-\renewcommand {\baselinestretch}{ 1.07 }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                 Математика                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\RequirePackage{mathtext}
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
@@ -38,9 +21,25 @@
 \RequirePackage{icomma}
 \RequirePackage{mathrsfs}
 \RequirePackage{bigints}
-
-\RequirePackage{iunits}
 \RequirePackage{udef}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              Формат документа                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[T2A,OT1]           {fontenc}
+\RequirePackage[utf8]              {inputenc}
+\RequirePackage[english, russian]  {babel}
+\RequirePackage[ left     = 2.5cm,
+                 right    = 1.5cm,
+                 top      = 2.0cm,
+                 bottom   = 1.25cm,
+                 includefoot,
+                 footskip = 1.25cm ]{geometry}
+\setlength    {\parskip}        { .5em plus .15em minus .08em }
+\setlength    {\parindent}      { .0em }
+\renewcommand {\baselinestretch}{ 1.07 }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

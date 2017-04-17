@@ -11,9 +11,9 @@
 ## Urticle
 Class file for general purposes based on standard `article`.  
 It loads the bunch of commonly used LaTeX packages:
-* `fontenc`, `inputenc`, `babel`, `geometry`;
 * `amsmath`, `amsfonts`, `amssymb`, `onlyamsmath`;
 * `cancel`, `icomma`, `mathrsfs`, `bigints`;
+* `fontenc`, `inputenc`, `babel`, `geometry`;
 * `graphicx`, `color`, `float`, `wrapfig`, `tikz`, `pgfplots`;
 * `fancyhdr`, `fancyref`, `secdot`, `caption`;
 * `enumitem`, `booktabs`, `array`.
@@ -22,8 +22,10 @@ It loads the bunch of commonly used LaTeX packages:
 ## IUnits
 LaTeX package to make typing scientific texts **in Russian** easier.  
 Provides a plenty of physical units and prefixes' macros.  
+*The package is switched off by default since v1.8. It is still possible to load it manually.*
 
-**Usage:**&emsp;`Ускорение свободно падающего тела $ g = 9.8~\m/\s^2 $.`
+**Usage:**&emsp;`Ускорение свободно падающего тела $ g = 9.8~\m/\s^2 $.`  
+**Now it works without this package:**&emsp;`$ g = 9.8~м/с $`
 
 
 ## InputX
