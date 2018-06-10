@@ -9,11 +9,11 @@
 \newcommand{\bs}{\baselineskip}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
-\newcommand{\dd} [2]{\frac{d #1}{d #2}}
+%\newcommand{\dd}[2]{\frac{d #1}{d #2}}
 \newcommand{\pdd}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\ddc}[3]{\left( \frac{\partial #1}{\partial #2} \right)_{\! #3}}
-\newcommand{\abs}[1]{\left| #1 \right|}
-\newcommand{\divc}  {\mathop{\raisebox{-2pt}{\vdots}}}
+%\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\divc} {\mathop{\raisebox{-2pt}{\vdots}}}
 
 \renewcommand{\iff}     {\quad \Longleftrightarrow \quad}
 \newcommand  {\then}    {\quad \Longrightarrow \quad}
@@ -27,6 +27,62 @@
 \DeclareMathOperator {\Rg} {Rg}
 \DeclareMathOperator {\Int}{int}
 
+%%
+\renewcommand{\epsilon}{\ensuremath{\varepsilon}}
+\renewcommand{\phi}{\ensuremath{\varphi}}
+\renewcommand{\kappa}{\ensuremath{\varkappa}}
+%\renewcommand{\le}{\ensuremath{\leqslant}}
+%\renewcommand{\leq}{\ensuremath{\leqslant}}
+%\renewcommand{\ge}{\ensuremath{\geqslant}}
+%\renewcommand{\geq}{\ensuremath{\geqslant}}
+\renewcommand{\emptyset}{\varnothing}
+
+%%
+
+%DeclareMathOperator{\sgn}{\mathop{sgn}}
+\newcommand{\te}{\ensuremath{\; \Rightarrow \;}}
+\newcommand{\y}{\ensuremath{\angle}}
+\newcommand{\ABC}{\ensuremath{\triangle ABC\,}}
+%\newcommand{\tr}{\ensuremath{\triangle}}
+\newcommand{\ca}{\ensuremath{\cos\alpha}}
+\newcommand{\sa}{\ensuremath{\sin\alpha}}
+\newcommand{\cb}{\ensuremath{\cos\beta}}
+\newcommand{\sib}{\ensuremath{\sin\beta}}
+\newcommand{\ov}{\ensuremath{\overline}}
+\newcommand{\x}{\cdot}
+\newcommand{\de}{\varDelta}
+\newcommand{\st}{\ensuremath{\longrightarrow}}
+%%
+\newcommand{\al}{\ensuremath{\alpha}}
+\newenvironment{solv}{ \begin{center}  \fbox }{ \end{center}}
+\DeclareMathOperator {\di}{div}
+\DeclareMathOperator {\rot}{rot}
+\DeclareMathOperator {\inv}{inv}
+\DeclareMathOperator {\diag}{diag}
+%Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}	{\hbox{$\mathsurround=0pt #1$}}{}}
+\newcommand{\ii}{\ensuremath{\mathbf{i}}}
+\newcommand{\jj}{\ensuremath{\mathbf{j}}}
+\newcommand{\kk}{\ensuremath{\mathbf{k}}}
+\newcommand{\vv}{\ensuremath{|v\rangle}}
+\newcommand{\lm}{\ensuremath{\Lambda}}
+\newcommand{\gm}{\ensuremath{\Gamma_{\mu\nu}}}
+\newcommand{\ekv}{\ensuremath{\Leftrightarrow}}
+\newcommand{\dpa}{\ensuremath{\partial}}
+%%
+\newcommand{\s}[1]{\left( #1 \right)}
+\newcommand{\sak}[1]{\left\{ #1 \right\}}
+\newcommand{\sab}[1]{\left[ #1 \right]}
+\newcommand{\sys}[1]{
+	\left\{
+	\begin{aligned} #1 \end{aligned}
+	\right.
+}
+\newcommand{\del}{\ensuremath{\delta}}
+\newcommand{\co}{\ensuremath{\mathrm{const}}}
+\newcommand{\D}{\ensuremath{\mathcal{D}}}
+\newcommand{\spdd}[2]{\left( \frac{\partial #1}{\partial #2} \right)}
+\newcommand{\Dd}[4]{\frac{\partial \left( #1, #2\right) }{\partial \left( #3, #4\right)}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                Патчи окружений                              %
@@ -55,3 +111,7 @@
   \let\@ifnextchar\new@ifnextchar
   \array{#1}}
 \makeatother
+
+%Ответ
+
+

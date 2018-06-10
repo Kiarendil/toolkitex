@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{urticle}
+\ProvidesClass{kiarticle}
 \ProcessOptions
 
 \LoadClass
@@ -11,6 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{mathtext}
+\RequirePackage{mathtools}
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
@@ -21,9 +22,14 @@
 \RequirePackage{icomma}
 \RequirePackage{mathrsfs}
 \RequirePackage{bigints}
+\RequirePackage{mathrsfs}
+%\RequirePackage{physics}
+\RequirePackage{indentfirst}
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+
 \RequirePackage{udef}
-
-
+\RequirePackage{iunits}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                              Формат документа                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,14 +37,14 @@
 \RequirePackage[T2A,OT1]           {fontenc}
 \RequirePackage[utf8]              {inputenc}
 \RequirePackage[english, russian]  {babel}
-\RequirePackage[ left     = 2.5cm,
+\RequirePackage[ left     = 1.5cm,
                  right    = 1.5cm,
                  top      = 2.0cm,
                  bottom   = 1.25cm,
                  includefoot,
                  footskip = 1.25cm ]{geometry}
 \setlength    {\parskip}        { .5em plus .15em minus .08em }
-\setlength    {\parindent}      { .0em }
+%\setlength    {\parindent}      { .0em }
 \renewcommand {\baselinestretch}{ 1.07 }
 
 
@@ -47,7 +53,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{graphicx}
-    \graphicspath{{img/}}
 \RequirePackage{float}
 \RequirePackage{wrapfig}
 \RequirePackage{color}
@@ -62,11 +67,7 @@
 
 \RequirePackage{fancyref}
 \RequirePackage{fancyhdr}
-    \pagestyle{fancy}
-    \fancyhf{}
-    \renewcommand{\headrulewidth}{ .0em }
-    \renewcommand{\footrulewidth}{ .0em }
-    \fancyfoot[C]{\texttt{-~\thepage~-}}
+
 \RequirePackage{secdot}
 \RequirePackage{caption}
 

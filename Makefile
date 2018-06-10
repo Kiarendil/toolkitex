@@ -2,7 +2,7 @@
 sandwich:
 	@echo "Run make install, please."
 
-__check_integrity: core/iunits.sty core/inputx.sty core/urticle.cls core/writex.sh
+__check_integrity: core/iunits.sty core/inputx.sty core/kiarticle.cls core/writex.sh
 	@echo "Integrity check passed."
 
 TEXMF_PATH := $(shell kpsewhich -var-value=TEXMFLOCAL)/tex/latex/toolkitex
