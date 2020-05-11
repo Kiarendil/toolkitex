@@ -1,0 +1,284 @@
+\ProvidesPackage{deff}
+
+\newcommand{\Pmu}       {\ensuremath{\mu}\xspace}
+\newcommand{\muon}      {\ensuremath{\Pmu}\xspace}
+\newcommand{\mup}       {\ensuremath{\Pmu^+}\xspace}
+\newcommand{\mun}       {\ensuremath{\Pmu^-}\xspace} % muon negative (\mum is taken)
+\newcommand{\mupm}      {\ensuremath{\Pmu^\pm}\xspace}
+\newcommand{\mumu}      {\ensuremath{\Pmu^+\Pmu^-}\xspace}
+
+\newcommand{\pion}      {\ensuremath{\pi}\xspace}
+\newcommand{\piz}       {\ensuremath{\pion^0}\xspace}
+\newcommand{\pizs}      {\ensuremath{\pion^0\mbox\,\rm{s}}\xspace}
+\newcommand{\pip}       {\ensuremath{\pion^+}\xspace}
+\newcommand{\pim}       {\ensuremath{\pion^-}\xspace}
+\newcommand{\pipi}      {\ensuremath{\pion^+\pion^-}\xspace}
+\newcommand{\pipm}      {\ensuremath{\pion^\pm}\xspace}
+\newcommand{\pimp}      {\ensuremath{\pion^\mp}\xspace}
+
+\newcommand{\kaon}      {\ensuremath{\PK}\xspace}
+\newcommand{\Kbar}      {\kern 0.2em\overline{\kern -0.2em \PK}{}\xspace}
+
+\newcommand{\Kp}        {\ensuremath{\kaon^+}\xspace}
+\newcommand{\Km}        {\ensuremath{\kaon^-}\xspace}
+\newcommand{\Kz}        {\ensuremath{\Kbar^0}\xspace}
+\newcommand{\Kzb}       {\ensuremath{\kaon^0}\xspace}
+\newcommand{\Kpm}       {\ensuremath{\kaon^\pm}\xspace}
+\newcommand{\Kmp}       {\ensuremath{\kaon^\mp}\xspace}
+\newcommand{\KS}        {\ensuremath{\kaon^0_{\rm\scriptscriptstyle S}}\xspace} 
+\newcommand{\KL}        {\ensuremath{\kaon^0_{\rm\scriptscriptstyle L}}\xspace} 
+\newcommand{\Kstarz}    {\ensuremath{\kaon^{*0}}\xspace}
+\newcommand{\Kstarzm}   {\ensuremath{\kaon^{*}(892)^0}\xspace}
+\newcommand{\Kstarzmb}  {\ensuremath{\Kbar^{*}(892)^0}\xspace}
+\newcommand{\Kstarzbm}  {\ensuremath{\Kbar^{*}(892)^0}\xspace}
+\newcommand{\Kstarzb}   {\ensuremath{\Kbar^{*0}}\xspace}
+
+\newcommand{\La}        {\ensuremath{\Lambda}\xspace}
+\newcommand{\Xim}       {\ensuremath{\Xi^-}\xspace}
+
+\newcommand{\jpsi}      {\ensuremath{\cmsSymbolFace{J}\hspace{-.08em}/\hspace{-.14em}\psi}\xspace}
+\newcommand{\psit}      {\ensuremath{\psi\hspace{-.04em}\mathrm{(2S)}}\xspace}
+
+
+% \newcommand{\PB}    {\ensuremath{\cmsSymbolFace{B}}\xspace}
+\newcommand{\uquark}    {\ensuremath{\cmsSymbolFace{u}}\xspace}
+\newcommand{\dquark}    {\ensuremath{\cmsSymbolFace{d}}\xspace}
+\newcommand{\squark}    {\ensuremath{\cmsSymbolFace{s}}\xspace}
+\newcommand{\cquark}    {\ensuremath{\cmsSymbolFace{c}}\xspace}
+\newcommand{\bquark}    {\ensuremath{\cmsSymbolFace{b}}\xspace}
+\newcommand{\PVPV}         {\ensuremath{\cmsSymbolFace{PV}}\xspace}
+
+\newcommand{\B}         {\ensuremath{\cmsSymbolFace{B}}\xspace}
+% \newcommand{\B}     {\ensuremath{\PB}\xspace}
+\newcommand{\Bbar}      {\ensuremath{\kern 0.18em\overline{\kern -0.18em \PB}{}}\xspace}
+\newcommand{\Bb}        {\ensuremath{\Bbar}\xspace}
+\newcommand{\BBbar}     {\ensuremath{\B\Bbar}\xspace} 
+\newcommand{\Bzb}       {\ensuremath{\Bbar^0}\xspace}
+\newcommand{\Bu}        {\ensuremath{\B^+}\xspace}
+\newcommand{\Bub}       {\ensuremath{\B^-}\xspace}
+\newcommand{\Bp}        {\ensuremath{\Bu}\xspace}
+\newcommand{\Bm}        {\ensuremath{\Bub}\xspace}
+\newcommand{\Bpm}       {\ensuremath{\B^\pm}\xspace}
+\newcommand{\Bmp}       {\ensuremath{\B^\mp}\xspace}
+\newcommand{\Bd}        {\ensuremath{\B^0}\xspace}
+\newcommand{\Bs}        {\ensuremath{\B^0_\squark}\xspace}
+\newcommand{\Bsb}       {\ensuremath{\Bbar^0_\squark}\xspace}
+\newcommand{\Bdb}       {\ensuremath{\Bbar^0}\xspace}
+\newcommand{\Bc}        {\ensuremath{\B_\cquark^+}\xspace}
+\newcommand{\Bcp}       {\ensuremath{\B_\cquark^+}\xspace}
+\newcommand{\Bcm}       {\ensuremath{\B_\cquark^-}\xspace}
+\newcommand{\Bcpm}      {\ensuremath{\B_\cquark^\pm}\xspace}
+
+\newcommand{\Lb}        {\ensuremath{\Lambda_{\mathrm{b}}^0}\xspace}
+\newcommand{\Lbst}      {\ensuremath{\Lambda_{\mathrm{b}}^{*0}}\xspace}
+\newcommand{\Lbson}     {\ensuremath{\Lambda_{\mathrm{b}}^*(5912)^0}\xspace}
+\newcommand{\Lbstw}     {\ensuremath{\Lambda_{\mathrm{b}}^*(5920)^0}\xspace}
+
+\newcommand{\Xb}        {\ensuremath{\Xi_{\mathrm{b}}^-}\xspace}
+\newcommand{\Xbz}       {\ensuremath{\Xi_{\mathrm{b}}^0}\xspace}
+\newcommand{\Xbns}      {\ensuremath{\Xi_{\mathrm{b}}}\xspace}
+\newcommand{\Xbs}       {\ensuremath{\Xi_{\mathrm{b}}^{*0}}\xspace}
+\newcommand{\Xbss}      {\ensuremath{\Xi_{\mathrm{b}}^{**-}}\xspace}
+
+\newcommand{\Xcns}      {\ensuremath{\PGXc}\xspace}
+
+\newcommand{\Lbsth}     {\ensuremath{\Lambda_{\mathrm{b}}^*(6150)^0}\xspace}
+\newcommand{\Lbsthl}    {\ensuremath{\Lambda_{\mathrm{b}}^*(6146)^0}\xspace}
+\newcommand{\Lbsthh}    {\ensuremath{\Lambda_{\mathrm{b}}^*(6152)^0}\xspace}
+\newcommand{\Lbsfo}     {\ensuremath{\Lambda_{\mathrm{b}}^*(6235)^0}\xspace}
+
+\newcommand{\Sb}        {\ensuremath{\Sigma_{\mathrm{b}}}\xspace}
+\newcommand{\Sbs}       {\ensuremath{\Sigma_{\mathrm{b}}^{*}}\xspace}
+\newcommand{\Sbz}       {\ensuremath{\Sigma_{\mathrm{b}}^0}\xspace}
+\newcommand{\Sbsz}      {\ensuremath{\Sigma_{\mathrm{b}}^{*0}}\xspace}
+\newcommand{\Sbp}       {\ensuremath{\Sigma_{\mathrm{b}}^{+}}\xspace}
+\newcommand{\Sbsp}      {\ensuremath{\Sigma_{\mathrm{b}}^{*+}}\xspace}
+\newcommand{\Sbm}       {\ensuremath{\Sigma_{\mathrm{b}}^{-}}\xspace}
+\newcommand{\Sbsm}      {\ensuremath{\Sigma_{\mathrm{b}}^{*-}}\xspace}
+
+\newcommand{\Sbszmass}  {\ensuremath{\Sigma_{\mathrm{b}}^*(6097)^0}\xspace}
+
+\newcommand{\LbJpLam}   {\ensuremath{\Lambda_{\mathrm{b}}^0\to\jpsi\Lambda}\xspace}
+\newcommand{\LbPpLam}   {\ensuremath{\Lambda_{\mathrm{b}}^0\to\psit\Lambda}\xspace}
+\newcommand{\LbPsiLam}  {\ensuremath{\Lambda_{\mathrm{b}}^0\to\psi\Lambda}\xspace}
+\newcommand{\JMM}       {\ensuremath{\jpsi\to\mumu}\xspace}
+\newcommand{\PMM}       {\ensuremath{\psit\to\mumu}\xspace}
+\newcommand{\PJPP}      {\ensuremath{\psit\to\jpsi\pipi}\xspace}
+\newcommand{\JPP}       {\ensuremath{\jpsi\pipi}\xspace}
+
+\newcommand{\XbJpiX}   {\ensuremath{\Xb\to\jpsi\Xi}\xspace}
+\newcommand{\XbPpXi}   {\ensuremath{\Xb\to\psit\Xi}\xspace}
+\newcommand{\XbPsiXi}  {\ensuremath{\Xb\to\psi\Xi}\xspace}
+
+\newcommand{\LbPP}      {\ensuremath{\Lb\pip\pim}\xspace}
+\newcommand{\LbPPnos}   {\ensuremath{\Lb\pi\pi}\xspace}
+\newcommand{\LbPi}     {\ensuremath{\Lb\pi}\xspace}
+\newcommand{\LbPip}     {\ensuremath{\Lb\pip}\xspace}
+\newcommand{\LbPim}     {\ensuremath{\Lb\pim}\xspace}
+
+\newcommand{\XbP}       {\ensuremath{\Xb \pip}\xspace}
+\newcommand{\XbPP}      {\ensuremath{\Xb \pip\pim}\xspace}
+\newcommand{\XbPPnos}   {\ensuremath{\Xb\pion\pion}\xspace}
+\newcommand{\dmX}       {\ensuremath{\delta m_{\XbPP}}\xspace}
+
+\newcommand{\Xbsd}    {\ensuremath{\Xbs\to\XbP}\xspace}
+\newcommand{\Xbssd}   {\ensuremath{\Xbss\to\XbPP}\xspace}
+\newcommand{\Xbssdi}  {\ensuremath{\Xbss\to\Xbs\pim}\xspace}
+
+\newcommand{\Bdst}      {\ensuremath{\B^{*0}}\xspace}
+\newcommand{\Bzst}      {\ensuremath{\B^{*0}}\xspace}
+\newcommand{\Bdstb}     {\ensuremath{\Bbar^{*0}}\xspace}
+\newcommand{\Bzstb}     {\ensuremath{\Bbar^{*0}}\xspace}
+\newcommand{\Bust}      {\ensuremath{\B^{*+}}\xspace}
+\newcommand{\Bpst}      {\ensuremath{\B^{*+}}\xspace}
+\newcommand{\Bst}       {\ensuremath{\B^{*}}\xspace}
+\newcommand{\Buorst}    {\ensuremath{\B^{(*)+}}\xspace}
+\newcommand{\Bdorst}    {\ensuremath{\B^{(*)0}}\xspace}
+\newcommand{\Bmst}      {\ensuremath{\B^{*-}}\xspace}
+\newcommand{\Bustb}     {\ensuremath{\B^{*-}}\xspace}
+\newcommand{\Bsst}      {\ensuremath{\B^{*0}_{\squark}}\xspace}
+
+\newcommand{\Bone}      {\ensuremath{\B_{1}}\xspace}
+\newcommand{\Bonem}     {\ensuremath{\B_{1}(5721)^0}\xspace}
+\newcommand{\Btwost}    {\ensuremath{\B^{*}_{2}}\xspace}
+\newcommand{\Btwostm}   {\ensuremath{\B^{*}_{2}(5747)^0}\xspace}
+\newcommand{\Bonetwost} {\ensuremath{\B^{(*)}_{1,2}}\xspace}
+
+\newcommand{\Bsone}     {\ensuremath{\B_{\squark1}}\xspace}
+\newcommand{\Bsonem}    {\ensuremath{\B_{\squark1}(5830)^0}\xspace}
+\newcommand{\Bstwost}   {\ensuremath{\B^{*}_{\squark2}}\xspace}
+\newcommand{\Bstwostm}  {\ensuremath{\B^{*}_{\squark2}(5840)^0}\xspace}
+\newcommand{\Bsonetwost}{\ensuremath{\B^{(*)}_{\squark1,2}}\xspace}
+
+\newcommand{\pp}        {\ensuremath{pp}\xspace}
+
+\newcommand{\KSPiPi}    {\ensuremath{\KS\to\pipi}\xspace}
+
+\newcommand{\BuJpsiK}   {\ensuremath{\Bu\to\jpsi\Kp}\xspace}
+\newcommand{\BuJpsiKpiz}{\ensuremath{\Bu\to\jpsi\Kp\piz}\xspace}
+\newcommand{\JpsiK}     {\ensuremath{\jpsi\Kp}\xspace}
+
+\newcommand{\BdJpsiKPi} {\ensuremath{\Bd\to\jpsi\Kp\pim}\xspace}
+\newcommand{\BdJpsiKst} {\ensuremath{\Bd\to\jpsi\Kstarz}\xspace}
+\newcommand{\JpsiKPi}   {\ensuremath{\jpsi\Kp\pim}\xspace}
+\newcommand{\KstarKPi}  {\ensuremath{\Kstarz\to\Kp\pim}\xspace}
+\newcommand{\LamPPi}    {\ensuremath{\Lambda\to\mathrm{p}\pim}\xspace}
+
+\newcommand{\XiLamPi}    {\ensuremath{\Xim\to\La\pim}\xspace}
+
+\newcommand{\BdstBdGam} {\ensuremath{\Bdst\to\Bd\gamma}\xspace}
+\newcommand{\BustBuGam} {\ensuremath{\Bust\to\Bu\gamma}\xspace}
+
+\newcommand{\BssBpKm}   {\ensuremath{\Bstwost\to\Bu\Km}\xspace}
+\newcommand{\BssBuKm}   {\ensuremath{\Bstwost\to\Bu\Km}\xspace}
+\newcommand{\BssBustKm} {\ensuremath{\Bstwost\to\Bust\Km}\xspace}
+\newcommand{\BsoBustKm} {\ensuremath{\Bsone\to\Bust\Km}\xspace}
+\newcommand{\BssmBpKm}  {\ensuremath{\Bstwostm\to\Bu\Km}\xspace}
+\newcommand{\BpKm}      {\ensuremath{\Bu\Km}\xspace}
+\newcommand{\BuKm}      {\ensuremath{\Bu\Km}\xspace}
+\newcommand{\BsonetwoBusKm} {\ensuremath{\Bsonetwost\to\Buorst\Km}\xspace}
+
+\newcommand{\BK}        {\ensuremath{\B\kaon}\xspace}
+\newcommand{\BstK}      {\ensuremath{\Bst\kaon}\xspace}
+\newcommand{\BuPi}      {\ensuremath{\Bu\pim}\xspace}
+\newcommand{\BpPi}      {\ensuremath{\Bu\pim}\xspace}
+
+\newcommand{\BssBdKS}   {\ensuremath{\Bstwost\to\Bd\KS}\xspace}
+\newcommand{\BssBdstKS} {\ensuremath{\Bstwost\to\Bdst\KS}\xspace}
+\newcommand{\BssmBdKS}  {\ensuremath{\Bstwostm\to\Bd\KS}\xspace}
+\newcommand{\BsoBdstKS} {\ensuremath{\Bsone\to\Bdst\KS}\xspace}
+\newcommand{\BdKS}      {\ensuremath{\Bd\KS}\xspace}
+
+\newcommand{\BsJpsiKK}  {\ensuremath{\Bs\to\jpsi\Kp\Km}\xspace}
+\newcommand{\BsJpsiPhi} {\ensuremath{\Bs\to\jpsi\phi}\xspace}
+\newcommand{\JpsiKK}    {\ensuremath{\jpsi\Kp\Km}\xspace}
+\newcommand{\JpsiPhi}   {\ensuremath{\jpsi\phi}\xspace}
+
+
+\newcommand{\mLbPP}     {\ensuremath{m_{\Lb\pip\pim}}\xspace}
+\newcommand{\mLbPPnos}  {\ensuremath{m_{\Lb\pion\pion}}\xspace}
+
+\newcommand{\mXbPP}     {\ensuremath{m_{\Xb\pip\pim}}\xspace}
+\newcommand{\mXbPPnos}  {\ensuremath{m_{\Xb\pion\pion}}\xspace}
+
+\newcommand{\mKS}       {\ensuremath{m_{\KS}}\xspace}
+\newcommand{\mKm}       {\ensuremath{m_{\Km}}\xspace}
+\newcommand{\mB}        {\ensuremath{m_{\B}}\xspace}
+\newcommand{\mBd}       {\ensuremath{m_{\Bd}}\xspace}
+\newcommand{\mBz}       {\ensuremath{m_{\Bd}}\xspace}
+\newcommand{\mBp}       {\ensuremath{m_{\Bp}}\xspace}
+\newcommand{\mBu}       {\ensuremath{m_{\Bp}}\xspace}
+\newcommand{\mBs}       {\ensuremath{m_{\Bs}}\xspace}
+\newcommand{\mBc}       {\ensuremath{m_{\Bc}}\xspace}
+\newcommand{\mBst}      {\ensuremath{m_{\Bst}}\xspace}
+\newcommand{\mBdst}     {\ensuremath{m_{\Bdst}}\xspace}
+\newcommand{\mBzst}     {\ensuremath{m_{\Bdst}}\xspace}
+\newcommand{\mBpst}     {\ensuremath{m_{\Bpst}}\xspace}
+\newcommand{\mBust}     {\ensuremath{m_{\Bpst}}\xspace}
+\newcommand{\mBsone}    {\ensuremath{m_{\Bsone}}\xspace}
+\newcommand{\mBstwost}  {\ensuremath{m_{\Bstwost}}\xspace}
+\newcommand{\mKPIpm}    {\ensuremath{m_{\Kpm\pimp}}\xspace}
+
+\newcommand{\mBufit}    {\ensuremath{m_{\Bp}^{fit}}\xspace}
+\newcommand{\mLbfit}    {\ensuremath{m_{\Lb}^{fit}}\xspace}
+\newcommand{\mBuKm}     {\ensuremath{m_{\Bp\Km}}\xspace}
+\newcommand{\mBdKS}     {\ensuremath{m_{\Bd\KS}}\xspace}
+\newcommand{\mBuPi}     {\ensuremath{m_{\Bp\pim}}\xspace}
+\newcommand{\mXbfit}    {\ensuremath{m_{\Xb}^{fit}}\xspace}
+
+\newcommand{\Gammabss}  {\ensuremath{\Gamma_{\Bstwost}}\xspace}
+
+\newcommand{\chisq}     {\ensuremath{\chi^2}\xspace}
+\newcommand{\dof}       {\ensuremath{n_{dof}}\xspace}
+\newcommand{\chisqdof}  {\ensuremath{\chi^2/n_{dof}}\xspace}
+\newcommand{\trchisqdof}{\ensuremath{\chi^2_{tr}/n_{dof}}\xspace}
+\newcommand{\sigeff}    {\ensuremath{\sigma_{eff}}\xspace}
+\newcommand{\ips}       {\ensuremath{d_{xy}/\sigma_{d_{xy}}}\xspace}
+\newcommand{\pvtx}      {\ensuremath{P_{vtx}}\xspace}
+
+
+\newcommand{\sq}[1]   {\ensuremath{\sqrt{s} = #1}\xspace}
+
+\newcommand{\tev}       {\TeV}
+\newcommand{\tevc}      {\TeVc}
+\newcommand{\tevcc}     {\TeVcc}
+% \newcommand{\gev}       {\GeV}
+\newcommand{\gevc}      {\GeVc}
+\newcommand{\gevcc}     {\GeVcc}
+\newcommand{\mev}       {\MeV}
+\newcommand{\mevc}      {\MeVc}
+\newcommand{\mevcc}     {\MeVcc}
+\newcommand{\kev}       {\KeV}
+\newcommand{\kevc}      {\KeVc}
+\newcommand{\kevcc}     {\KeVcc}
+
+\newcommand{\ptmu}      {\ensuremath{\pt(\mupm)}\xspace}
+\newcommand{\ptmumu}    {\ensuremath{\pt(\mumu)}\xspace}
+\newcommand{\ptk}       {\ensuremath{\pt(\Kpm)}\xspace}
+\newcommand{\ptks}      {\ensuremath{\pt(\KS)}\xspace}
+\newcommand{\ptpi}      {\ensuremath{\pt(\pipm)}\xspace}
+\newcommand{\ptbs}      {\ensuremath{\pt(\Bs)}\xspace}
+\newcommand{\ptbu}      {\ensuremath{\pt(\Bu)}\xspace}
+\newcommand{\ptbd}      {\ensuremath{\pt(\Bd)}\xspace}
+
+\newcommand{\epsgen}    {\ensuremath{\epsilon^{gen}}\xspace}
+\newcommand{\splot}     {\ensuremath{{}_\mathrm{{s}}\mathcal{P}\mathrm{lot}}\xspace}
+
+%\newcommand{\tred}[1]   {\textcolor{red}{#1}}
+%\definecolor{light-gray}{gray}{0.57}
+\newcommand{\tgra}[1]   {\textcolor{light-gray}{#1}}
+% \newcommand{\texgra}    {\textcolor{gray}}
+% \newcommand{\texbla}    {\textcolor{black}}
+\newcommand{\estat}     {\ensuremath{\mathrm{(stat.)}}\xspace}
+\newcommand{\esyst}     {\ensuremath{\mathrm{(syst.)}}\xspace}
+\newcommand{\ebran}     {\ensuremath{(\mathcal{B})}\xspace}
+
+\newcommand{\rron}      {\ensuremath{R^{0\pm}_{2}}\xspace}
+\newcommand{\rrtw}      {\ensuremath{R^{0\pm}_{1}}\xspace}
+\newcommand{\rrth}      {\ensuremath{R^{\pm}_{2*}}\xspace}
+\newcommand{\rrfo}      {\ensuremath{R^{0}_{2*}}\xspace}
+\newcommand{\rrfi}      {\ensuremath{R^{\pm}_{\sigma}}\xspace}
+\newcommand{\rrsi}      {\ensuremath{R^{0}_{\sigma}}\xspace}
+
+%%The transfer signs in the formulas
+%\newcommand*{\hm}[1]{#1\nobreak\discretionary{}	{\hbox{$\mathsurround=0pt #1$}}{}}
