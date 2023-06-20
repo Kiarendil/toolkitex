@@ -40,10 +40,10 @@
 %\RequirePackage[T2A,OT1]           {fontenc}
 %\RequirePackage[utf8]              {inputenc}
 \RequirePackage[english, russian]  {babel}
-\RequirePackage{fontspec}      %% подготавливает загрузку шрифтов Open Type, True Type и др.
+\RequirePackage[no-math]{fontspec}   %% подготавливает загрузку шрифтов Open Type, True Type и др.
 \defaultfontfeatures{Ligatures={TeX},Renderer=Basic}  %% свойства шрифтов по умолчанию
-\RequirePackage[ left     = 3.0cm,
-                 right    = 1.5cm,
+\RequirePackage[ left     = 2.0cm,
+                 right    = 2.0cm,
                  top      = 2.0cm,
                  bottom   = 2.0cm,
                  includefoot,
